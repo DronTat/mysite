@@ -18,7 +18,7 @@ class CreateFilesTable extends Migration
             $table->string('email');
             $table->string('email_hash');
             $table->string('file_hash');
-            $table->string('file_name');
+            $table->string('file_name')->default('');
             $table->string('commit');
         });
     }
