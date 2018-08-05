@@ -32,6 +32,4 @@ Route::get('/admin/save', 'AdminController@save')->middleware('auth');
 
 Route::post('/upload', 'UploadController@index');
 
-Route::get('/test', 'TestController@index');
-
-Route::get('/uploads/{email}/{file}', 'TestController@test');
+Route::get('/uploads/{email}/{file}', 'DownloadController@index');
