@@ -12,7 +12,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(UserSeeder::class);
-//        $this->call(FileFakerSeeder::class);
+        $this->call(FileFakerSeeder::class);
         $this->command->info('Начальные данные заполнены!');
     }
 }
