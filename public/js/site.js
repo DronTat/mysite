@@ -64,6 +64,10 @@ $('document').ready(function () {
             },
             add: function(e, data){
                 var fileSize = data.originalFiles[0]['size'];
+                if (fileSize < 104857600){
+                    $('.alert').removeClass('alert-success').addClass('alert-danger').show().text('Минимальный размер 100Мб');
+                    return false;
+                }
                 if (fileSize > 157286400){
                     $('.alert').removeClass('alert-success').addClass('alert-danger').show().text('Превышен размер 150Мб');
                     return false;
