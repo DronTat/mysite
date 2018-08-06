@@ -22,6 +22,7 @@ $('document').ready(function () {
                 var odj = jQuery.parseJSON(data);
                 if (odj['code'] = 'success'){
                     console.log('Ура!!!');
+                    location.reload();
                 }
             }
         });
@@ -43,6 +44,7 @@ $('document').ready(function () {
                 if (odj['code'] = 'success'){
                     $('#Modal').modal('hide');
                     console.log('Ура!!!');
+                    location.reload();
                 }
             }
         });

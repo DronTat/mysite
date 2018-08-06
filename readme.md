@@ -27,3 +27,7 @@ JQuery File Upload, Nayjest/grids, Bootstrap
 
 Заметка: если у Вас возникнет проблема 413 при загрузке файла, поменяйте настройки:<br>
 "/etc/nginx/sites-available/ваш_сайт" установите параметр client_max_body_size = 150m;
+
+Админка:<br>
+логин: admin@admin.ru<br>
+пароль: 123456
